@@ -75,9 +75,11 @@ RUN apt-get -yqq update && \
     git \
     gperf \
     jq \
+    libcairo2-dev \
     libexpat1-dev \
     libxext-dev \
     libgcc-9-dev \
+    libglib2.0-dev \
     libgomp1 \
     libharfbuzz-dev \
     libpciaccess-dev \
@@ -102,6 +104,7 @@ RUN apt-get -yqq update && \
     perl \
     pkg-config \
     python3-venv \
+    ragel \
     x11proto-xext-dev \
     xserver-xorg-dev \
     xz-utils \
@@ -626,6 +629,7 @@ RUN cd /tmp/ffmpeg && \
     --enable-cuvid \
     --enable-ffprobe \
     --enable-fontconfig \
+    --enable-libharfbuzz \
     --enable-gpl \
     --enable-libaom \
     --enable-libdav1d \
